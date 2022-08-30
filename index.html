@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-5xl font-bold text-center mt-6 **text-clifford**">
+        welcome to
+        <span id="header-text" class="text-violet-600">baper bank</span> !!!
+      </h1>
+    </header>
+    <main>
+      <section>
+        <div class="grid grid-cols-3 gap-4 mt-6 w-9/12 mx-auto">
+          <div class="rounded-lg bg-blue-400 p-8 text-center">
+            <h3 class="text-2xl font-semibold">Diposite</h3>
+            <h1 class="text-5xl font-semibold">
+              $<span id="diposite-total">00 </span>
+            </h1>
+          </div>
+          <div class="rounded-lg bg-yellow-400 p-8 text-center">
+            <h3 class="text-2xl font-semibold">withdraw</h3>
+            <h1 class="text-5xl font-semibold">
+              $<span id="withdraw-total">00 </span>
+            </h1>
+          </div>
+          <div class="rounded-lg bg-green-400 p-8 text-center">
+            <h3 class="text-2xl font-semibold">Balance</h3>
+            <h1 class="text-5xl font-semibold">
+              $<span id="balance-total">1200</span>
+            </h1>
+          </div>
+        </div>
+      </section>
+      <!-- input field -->
+      <section>
+        <div class="grid grid-cols-2 gap-5 mt-6 w-9/12 mx-auto">
+            <div class="bg-green-600 rounded-lg px-10 py-8">
+                <h3 class="text-3xl">Diposite</h3>
+                <input type="text" class="mt-3 w-9/12 py-1 rounded " id="diposite-field" placeholder="plese enter diposite amount">
+                <button id="diposite-btn" class="block mt-3  bg-blue-500 text-white px-4 py-2 font-semibold rounded hover:bg-blue-800">Diposite</button>
+            </div>
+            <div class="bg-red-500 rounded-lg px-10 py-8">
+                <h3 class="text-3xl">withdraw</h3>
+                <input type="text" class="mt-3 w-9/12 py-1 rounded " id="withdraw-field" placeholder="plese enter withdraw amount">
+                <button id="withdraw-btn" class="block mt-3  bg-blue-500 text-white px-4 py-2 font-semibold rounded hover:bg-blue-800">withdraw</button>
+            </div>
+        </12>
+      </section>
+    </main>
+    <script src="js/utilites.js"></script>
+    <script src="js/diposite.js"></script>
+    <script src="js/withdraw.js"></script>
+  </body>
+</html>
